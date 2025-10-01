@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌐 My Interactive Web Page</h1>
+    <button id="themeToggle">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Counter Section -->
+    <section>
+      <h2>🎮 Click Counter</h2>
+      <p>Clicks: <span id="counterValue">0</span></p>
+      <button id="counterBtn">Click Me!</button>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+      <h2>❓ FAQ</h2>
+      <div class="faq">
+        <button class="faq-question">What is JavaScript?</button>
+        <p class="faq-answer">JavaScript is a programming language that makes web pages interactive.</p>
+      </div>
+      <div class="faq">
+        <button class="faq-question">Why learn JS?</button>
+        <p class="faq-answer">Because it powers the dynamic behavior of websites and web apps.</p>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>📋 Register</h2>
+      <form id="registerForm" novalidate>
+        <label>
+          Name:
+          <input type="text" id="name" required>
+          <span class="error" id="nameError"></span>
+        </label>
+        <br><br>
+        <label>
+          Email:
+          <input type="email" id="email" required>
+          <span class="error" id="emailError"></span>
+        </label>
+        <br><br>
+        <label>
+          Password:
+          <input type="password" id="password" required>
+          <span class="error" id="passwordError"></span>
+        </label>
+        <br><br>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formSuccess" class="success"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
